@@ -64,4 +64,29 @@ public class InStack {
 		return -1;	//검색 실패
 	}
 	
+	//스택 비움
+	public void clear() {
+		ptr=0;
+	}
+	
+	//스택 용량 확인
+	public int capacity() {
+		return max;
+	}
+	
+	//스택에 쌓여 있는 데이터 수
+	public int size() {
+		return ptr;
+	}
+	
+	//스택이 비어 있는가?
+	public boolean isEmpty() {
+		return ptr<=0;	//if(ptr<=0)
+	}
+	
+	//스택이 가득 찼는가?
+	public boolean isFull() {
+		return ptr>=max;
+	}
+	
 }
